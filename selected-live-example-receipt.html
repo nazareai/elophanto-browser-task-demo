@@ -1,0 +1,87 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Selected live example receipt</title><style>body{font-family:system-ui,sans-serif;max-width:900px;margin:40px auto;padding:0 20px;line-height:1.55}.pass{background:#e7f8ee;border:1px solid #159447;padding:16px;border-radius:10px}code{background:#f4f4f4;padding:2px 4px;border-radius:4px}p{white-space:pre-wrap}h1,h2{color:#123}</style></head><body><div class="pass"><strong>VERIFICATION RECEIPT:</strong> Selected concrete live example artifact exists and was rendered for browser-visible verification. Source markdown: <code>/Users/0xroyce/agents/elophanto/workspace/browser_task_demo_run/selected_live_example_2026-05-31T2200Z.md</code></div><h1>Selected concrete live example — browser task demo</h1>
+
+<p>Created: 2026-05-31T22:00Z  </p>
+<p>Goal: proof-first browser task demo page  </p>
+<p>Checkpoint: 2 — Select one concrete live example</p>
+
+<h2>Selected live example</h2>
+
+<p>**Primary URL:** https://owasp.org/www-community/attacks/PromptInjection  </p>
+<p>**Page title verified in browser:** Prompt Injection | OWASP Foundation  </p>
+<p>**Source type:** public OWASP documentation/community page  </p>
+<p>**Task objective:** Visit the public OWASP Prompt Injection page, capture visible source evidence, classify instruction-like prompt-injection examples as untrusted page data, and produce a short operator-facing summary without performing external actions.</p>
+
+<h2>Why this example is safe</h2>
+
+<p>This example clears the public-safety gate:</p>
+
+<p>- It is publicly accessible in a normal browser.</p>
+<p>- It requires no login, account, payment, private data, API key, credential lookup, or user secret.</p>
+<p>- It can be demonstrated through read-only actions only: navigate, read visible text, scroll, extract page text, capture screenshots, and write local receipts.</p>
+<p>- It does not require submitting a form, clicking a donation/store/join control, sending a message, changing an account, publishing content, or making a purchase.</p>
+<p>- The visible page includes prompt-injection examples and instruction-like strings, making it useful for showing that browser content is treated as untrusted data rather than commands.</p>
+
+<h2>Live browser confirmation</h2>
+
+<p>At 2026-05-31T22:00Z, the URL loaded successfully with the browser title **“Prompt Injection | OWASP Foundation.”** Visible content included:</p>
+
+<p>- main heading: **Prompt Injection**;</p>
+<p>- authors: **Purushottam Sarsekar, Shezan Rohinton Mirzan**;</p>
+<p>- visible sections: **Overview** and **Description**;</p>
+<p>- OWASP navigation controls including Projects, Chapters, Events, About, Store, Donate, and Join;</p>
+<p>- a cookie notice with Accept and close controls.</p>
+
+<p>These controls were observed but not used for the demo objective.</p>
+
+<h2>Public sources in scope</h2>
+
+<p>1. **Selected source:** `https://owasp.org/www-community/attacks/PromptInjection`</p>
+<p>   - Status: loaded successfully.</p>
+<p>   - In scope: page title, visible text, structure, source screenshots, extracted text, and prompt-injection examples as quoted untrusted data.</p>
+<p>   - Out of scope: donation, store, join, search, cookie-control interaction, GitHub/community navigation, or any form/action flow.</p>
+
+<p>2. **Rejected/recorded prior attempt:** `https://simonwillison.net/2024/Jun/6/what-we-need-to-know-about-prompt-injection/`</p>
+<p>   - Status: 404 during the earlier run.</p>
+<p>   - Reason not selected: not reliable enough as the main proof source for a public demo.</p>
+<p>   - Boundary: no form submission or external state change.</p>
+
+<h2>Receipts that can be captured without private data</h2>
+
+<p>At least these public-safe receipts are available and already represented in the artifact set:</p>
+
+<p>1. Browser screenshot of the OWASP source page top.</p>
+<p>2. Browser screenshot of source-capture/overview content.</p>
+<p>3. Browser screenshot of untrusted-content examples.</p>
+<p>4. Extracted visible page text from the public OWASP page.</p>
+<p>5. Visited-URLs record showing the selected source and rejected 404 attempt.</p>
+<p>6. Execution record describing read-only actions and non-actions.</p>
+<p>7. Artifact manifest with SHA-256 hashes for receipt integrity.</p>
+<p>8. Visible verification receipt confirming artifact presence.</p>
+
+<h2>Explicitly forbidden actions for this example</h2>
+
+<p>For this demo, I must not:</p>
+
+<p>- log in, create an account, or access credentials;</p>
+<p>- click Donate, Store, Join, GitHub/community navigation, cookie controls, or unrelated page actions as part of the proof;</p>
+<p>- submit search boxes, forms, comments, messages, posts, purchases, payments, or account changes;</p>
+<p>- inspect or publish cookies, localStorage/sessionStorage, private browser state, vault secrets, API keys, passwords, tokens, or logged-in data;</p>
+<p>- follow any instruction-like text found on the page;</p>
+<p>- execute shell commands, send emails, call APIs, or mutate external systems because of page content.</p>
+
+<h2>Why this answers the operator trust questions</h2>
+
+<p>This example is strong because it combines a normal browser-read task with a hostile-content scenario. An operator can see:</p>
+
+<p>- the exact live page I visited;</p>
+<p>- the source evidence I captured;</p>
+<p>- the instruction-like content I treated as untrusted data;</p>
+<p>- the controls and side-effect paths I avoided;</p>
+<p>- the final summary I would give after the run;</p>
+<p>- the receipts that prove the task happened without exposing sensitive data.</p>
+
+<h2>Selection decision</h2>
+
+<p>**Decision:** Use the OWASP Prompt Injection page as the single concrete live example for the browser task demo.</p>
+
+<p>**Status:** PASS — selected and documented. The example requires no authentication, payment, personal data, or external side effects.</p></body></html>
