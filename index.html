@@ -103,6 +103,7 @@
       <a href="#summary">Operator summary</a>
       <a href="#accessibility">Accessibility</a>
       <a href="#threat-model">Threat model</a>
+      <a href="#browser-verification">Browser verification</a>
     </nav>
     <div class="badge-row" aria-label="Demo status badges">
       <div class="badge"><strong>Status</strong> PASS: read-only run completed</div>
@@ -303,6 +304,44 @@ Types / Risks / Mitigations / Examples were present on the page. Prompt-injectio
         <li>Keyboard support: all interactive elements are standard links with visible focus states.</li>
         <li>Reduced motion: no animation by default, plus a <code>prefers-reduced-motion</code> guard.</li>
       </ul>
+    </section>
+
+    <section id="browser-verification" aria-labelledby="browser-verification-heading">
+      <h2 id="browser-verification-heading">Published browser verification receipt</h2>
+      <p><strong>Published URL verified in browser:</strong> <code>https://nazareai.github.io/elophanto-browser-task-demo/</code></p>
+      <p><strong>Verification run:</strong> 2026-05-31T22:23Z–2026-05-31T22:25Z UTC. <strong>Result:</strong> <span class="proof">PASS</span>.</p>
+      <p>This receipt exists because partial screenshots alone were not enough: the public page needed a stranger-visible record showing the live URL, the exact sections checked, capture timestamps, and the screenshot evidence bundle.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Sections captured from the public URL</h3>
+          <ul>
+            <li><strong>Top/task framing:</strong> hero and task card for the OWASP Prompt Injection read-only example.</li>
+            <li><strong>Proof/evidence:</strong> timeline, source-capture notes, redacted receipt cards, and artifact links.</li>
+            <li><strong>Untrusted content:</strong> external source text is evidence only, not instructions.</li>
+            <li><strong>Non-action boundaries:</strong> no login, credentials, forms, payments, posting, or external mutation.</li>
+            <li><strong>Final operator summary:</strong> what the proof shows and what it does not prove.</li>
+            <li><strong>Accessibility basics:</strong> semantic landmarks, skip link, alt text, contrast notes, focus states, reduced-motion guard.</li>
+            <li><strong>Receipts/checksum:</strong> public-safe bundle, transcript, URL log, visible text, execution record, manifest hashes, and example dossier.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Browser-visible screenshot captures</h3>
+          <ul>
+            <li><code>2026-05-31T22-23-27Z</code> — public URL top/hero framing.</li>
+            <li><code>2026-05-31T22-23-35Z</code> — task card and task summary.</li>
+            <li><code>2026-05-31T22-23-40Z</code> to <code>22-23-54Z</code> — redacted receipts and artifact links.</li>
+            <li><code>2026-05-31T22-24-07Z</code> to <code>22-24-21Z</code> — non-action boundaries.</li>
+            <li><code>2026-05-31T22-24-29Z</code> to <code>22-24-41Z</code> — accessibility notes and threat model.</li>
+            <li><code>2026-05-31T22-24-50Z</code> to <code>22-25-01Z</code> — final operator summary.</li>
+          </ul>
+        </div>
+      </div>
+      <h3>Verification note excerpt</h3>
+      <pre>Result: PASS
+Opened the published GitHub Pages URL in the browser, not via local file or raw source.
+Required sections verified: task, evidence timeline, untrusted-content handling, non-action boundaries, final operator summary, accessibility basics, receipts without sensitive data.
+Receipt images loaded with alt text and public artifact links were present.
+No dialogs, popups, input fields, or visible page-rendering errors appeared during verification.</pre>
     </section>
 
     <section id="threat-model" aria-labelledby="threat-heading">
