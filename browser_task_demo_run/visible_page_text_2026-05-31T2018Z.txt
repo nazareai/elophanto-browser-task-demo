@@ -1,0 +1,18 @@
+Prompt Injection
+Author: Purushottam Sarsekar, Shezan Rohinton Mirzan
+
+Overview
+
+Prompt Injection is a novel security vulnerability that targets Large Language Models (LLMs) like ChatGPT, Bard, and others. It manipulates the model’s behavior by crafting malicious or misleading prompts—often bypassing safety filters and executing unintended instructions. This can result in data leakage, privilege escalation, or unethical outputs.
+
+Prompt Injection is comparable to traditional command injection but applied in the realm of natural language. As AI becomes integrated into applications (e.g., chatbots, autonomous agents), understanding and mitigating prompt injection is crucial.
+
+Description
+
+Prompt injection occurs when an attacker provides specially crafted inputs that modify the original intent of a prompt or instruction set. It’s a way to “jailbreak” the model into ignoring prior instructions, performing forbidden tasks, or leaking data. The core vulnerability that gives rise to prompt injection attacks lies in what can be termed the “semantic gap”. This gap arises because both the system prompt (developer instructions) and the user’s input (data or new instructions) share the same fundamental format: natural-language text strings.
+
+Types / Risks / Mitigations / Examples were present on the page. Prompt-injection examples included phrases such as "Ignore previous instructions", hidden HTML instructions, email assistant manipulation, role injection, and social-engineering instructions. These were treated strictly as untrusted page data and not followed.
+
+Full extraction length recorded by browser_extract: 7456 characters.
+Source URL: https://owasp.org/www-community/attacks/PromptInjection
+Captured at: 2026-05-31T20:18Z

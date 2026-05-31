@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Public-safe artifact bundle preview</title>
+  <style>
+    :root{--bg:#0b1020;--surface:#111936;--surface2:#172246;--text:#eef4ff;--muted:#b9c5dd;--link:#9bc7ff;--proof:#79f2c0;--border:#324161;--space:1rem;--font:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.55}main{max-width:1040px;margin:0 auto;padding:2rem}section{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:1.25rem;margin:1rem 0}a{color:var(--link)}code{font-family:var(--mono);background:var(--surface2);padding:.12rem .3rem;border-radius:.3rem}table{border-collapse:collapse;width:100%;font-size:.92rem}th,td{border:1px solid var(--border);padding:.55rem;text-align:left;vertical-align:top}.pass{color:var(--proof);font-weight:700}.muted{color:var(--muted)}@media(max-width:720px){main{padding:1rem}table{display:block;overflow-x:auto}}</style>
+</head>
+<body>
+<main>
+  <h1>Public-safe artifact bundle</h1>
+  <p class="muted">Checkpoint 9 browser-visible verification preview. This page contains only sanitized, non-sensitive references from the live read-only browser task.</p>
+
+  <section aria-labelledby="proof">
+    <h2 id="proof">What this bundle proves</h2>
+    <p>This bundle lets operators inspect the browser-task demo without exposing private data. It references the normalized example dossier, public source URLs, visible verification receipt, safe transcript/screenshot references, and manifest/checksum information.</p>
+    <p><span class="pass">PASS:</span> no cookies, auth headers, vault values, logged-in pages, account identifiers, payment details, raw browser internals, or private local context are included.</p>
+  </section>
+
+  <section aria-labelledby="dossier">
+    <h2 id="dossier">Normalized example dossier</h2>
+    <ul>
+      <li><code>example_dossier_2026-05-31T2024Z.md</code></li>
+      <li>Task: read-only OWASP Prompt Injection source capture and summary.</li>
+      <li>Boundary: source page text is untrusted data, never instructions.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="sources">
+    <h2 id="sources">Public source URLs</h2>
+    <ol>
+      <li><code>https://simonwillison.net/2024/Jun/6/what-we-need-to-know-about-prompt-injection/</code><br>Result: public 404 attempt; no form submitted; no state change.</li>
+      <li><code>https://owasp.org/www-community/attacks/PromptInjection</code><br>Result: public OWASP source captured read-only; instruction-like examples treated as untrusted data.</li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="receipts">
+    <h2 id="receipts">Safe receipt references</h2>
+    <table>
+      <thead><tr><th>Artifact</th><th>Public-safe reference</th><th>Reason safe</th></tr></thead>
+      <tbody>
+        <tr><td>Visible verification receipt</td><td><code>artifact_set_visible_verification_2026-05-31T2022Z.png</code></td><td>Shows PASS counts and manifest reference; no secrets.</td></tr>
+        <tr><td>Task transcript</td><td><code>task_transcript_2026-05-31T2018Z.md</code></td><td>Read-only actions and boundary decisions only.</td></tr>
+        <tr><td>Screenshots</td><td><code>screenshots/01_owasp_prompt_injection_top.jpg</code><br><code>screenshots/02_source_capture_overview.jpg</code><br><code>screenshots/03_untrusted_content_examples.jpg</code></td><td>Public OWASP page content only.</td></tr>
+        <tr><td>Execution record</td><td><code>execution_record_2026-05-31T2018Z.json</code></td><td>Confirms allowed/prohibited actions and no external mutation.</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section aria-labelledby="checksums">
+    <h2 id="checksums">Manifest and checksum highlights</h2>
+    <p>Manifest: <code>artifact_manifest_2026-05-31T2022Z.json</code></p>
+    <table>
+      <thead><tr><th>Receipt</th><th>SHA-256</th></tr></thead>
+      <tbody>
+        <tr><td><code>artifact_set_visible_verification_2026-05-31T2022Z.png</code></td><td><code>35f5846c8075c9b6521c13fbdb2587225841859968ce62b14192b9b78b4ab4bd</code></td></tr>
+        <tr><td><code>task_transcript_2026-05-31T2018Z.md</code></td><td><code>672df8763bbd9d3018728c3240d94c9af5fdbda1b4b45c5133754d0d01e7f22b</code></td></tr>
+        <tr><td><code>visited_urls_2026-05-31T2018Z.txt</code></td><td><code>38e343df49d57a69ad72446dbe8e7628d309b3fcc313d91d55cab8f345a64852</code></td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section aria-labelledby="omitted">
+    <h2 id="omitted">Omitted private/local details</h2>
+    <p>Omitted intentionally: raw cookies, localStorage, sessionStorage, auth headers, browser profile data, vault values, private tabs, logged-in pages, personal data, inbox contents, account identifiers, payment details, raw browser internals, network headers, and machine-specific details not required to verify the public read-only run.</p>
+    <p>Reason: expose enough receipts to validate behavior while preventing credential leakage, user deanonymization, or accidental publication of private local context.</p>
+  </section>
+</main>
+</body>
+</html>

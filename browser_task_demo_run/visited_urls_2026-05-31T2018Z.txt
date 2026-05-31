@@ -1,0 +1,8 @@
+# Visited URLs — Browser task demo run
+Execution timestamp: 2026-05-31T20:18Z
+
+1. https://simonwillison.net/2024/Jun/6/what-we-need-to-know-about-prompt-injection/
+   Result: 404 page; no form submitted; no state change.
+
+2. https://owasp.org/www-community/attacks/PromptInjection
+   Result: public OWASP Prompt Injection page; read-only capture only; no state change.
