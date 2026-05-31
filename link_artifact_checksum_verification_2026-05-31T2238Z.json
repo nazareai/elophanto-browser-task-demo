@@ -1,0 +1,14 @@
+{
+  "verified_at_utc": "2026-05-31T22:35:21+00:00",
+  "refs_total": 27,
+  "public_urls_checked": 13,
+  "public_url_failures": [],
+  "local_missing": [],
+  "anchor_missing": [],
+  "page_checksum_failures": [],
+  "manifest_entries_checked": 13,
+  "manifest_failures": [],
+  "manifest_missing": [],
+  "local_only_path_hits": [],
+  "pass": true
+}

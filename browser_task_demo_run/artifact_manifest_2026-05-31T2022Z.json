@@ -1,6 +1,7 @@
 {
-  "verified_at_utc": "2026-05-31T20:21:58.937463+00:00",
+  "verified_at_utc": "2026-05-31T22:34:55+00:00",
   "artifact_directory": "public artifact bundle directory",
+  "manifest_scope": "current public checksum manifest; excludes this manifest file to avoid self-referential hash drift",
   "success_criteria": {
     "task_transcript_count": 1,
     "screenshot_count": 3,
@@ -13,63 +14,68 @@
   "files": [
     {
       "relative_path": "artifact_index.html",
-      "size_bytes": 3360,
-      "sha256": "fcb2eff1c97894fe0f712fac20a9dc5452ae5c33bf17eb1699bba3007208974a",
-      "modified_utc": "2026-05-31T20:20:39.960858+00:00"
-    },
-    {
-      "relative_path": "artifact_manifest_2026-05-31T2022Z.json",
-      "size_bytes": 2080,
-      "sha256": "0dd23ab4d61cba7e456e80036ab4f33a9ef880499a5e7e07151c867fd03cb2e1",
-      "modified_utc": "2026-05-31T20:19:57.221425+00:00"
+      "size_bytes": 3329,
+      "sha256": "d3d623369d08cec64604001cd2441fba1cd979c434792b16ef9259c73a5fb22d"
     },
     {
       "relative_path": "artifact_set_visible_verification_2026-05-31T2022Z.png",
       "size_bytes": 114717,
-      "sha256": "35f5846c8075c9b6521c13fbdb2587225841859968ce62b14192b9b78b4ab4bd",
-      "modified_utc": "2026-05-31T20:21:43.718038+00:00"
+      "sha256": "35f5846c8075c9b6521c13fbdb2587225841859968ce62b14192b9b78b4ab4bd"
     },
     {
       "relative_path": "execution_record_2026-05-31T2018Z.json",
       "size_bytes": 2149,
-      "sha256": "77d31885b5abec58772d2876a9464963a8692add4c21870106ad3c74daa00afe",
-      "modified_utc": "2026-05-31T20:19:12.265737+00:00"
+      "sha256": "77d31885b5abec58772d2876a9464963a8692add4c21870106ad3c74daa00afe"
     },
     {
       "relative_path": "screenshots/01_owasp_prompt_injection_top.jpg",
       "size_bytes": 141080,
-      "sha256": "2e7f6198c6744172d615e67cc1aa527b24df13e103b357366cd6bcde4649ef1e",
-      "modified_utc": "2026-05-31T20:18:12.058121+00:00"
+      "sha256": "2e7f6198c6744172d615e67cc1aa527b24df13e103b357366cd6bcde4649ef1e"
     },
     {
       "relative_path": "screenshots/02_source_capture_overview.jpg",
       "size_bytes": 125650,
-      "sha256": "a67ba2092fe2764ae02833e4d1b2610fb4cdb9f79d70ab65f8db71ddb3d987c7",
-      "modified_utc": "2026-05-31T20:18:12.063604+00:00"
+      "sha256": "a67ba2092fe2764ae02833e4d1b2610fb4cdb9f79d70ab65f8db71ddb3d987c7"
     },
     {
       "relative_path": "screenshots/03_untrusted_content_examples.jpg",
       "size_bytes": 58852,
-      "sha256": "03b61ad09acb655a097466034cba9c72e042cf066c9ba1c49ea3914534508803",
-      "modified_utc": "2026-05-31T20:18:12.068106+00:00"
+      "sha256": "03b61ad09acb655a097466034cba9c72e042cf066c9ba1c49ea3914534508803"
     },
     {
       "relative_path": "task_transcript_2026-05-31T2018Z.md",
       "size_bytes": 4835,
-      "sha256": "672df8763bbd9d3018728c3240d94c9af5fdbda1b4b45c5133754d0d01e7f22b",
-      "modified_utc": "2026-05-31T20:18:49.043416+00:00"
+      "sha256": "672df8763bbd9d3018728c3240d94c9af5fdbda1b4b45c5133754d0d01e7f22b"
     },
     {
       "relative_path": "visible_page_text_2026-05-31T2018Z.txt",
       "size_bytes": 1762,
-      "sha256": "54703c82ce507647ca7186c2a8c572ab2ffc899dbdfc20031f818611cd21a55e",
-      "modified_utc": "2026-05-31T20:18:25.561728+00:00"
+      "sha256": "54703c82ce507647ca7186c2a8c572ab2ffc899dbdfc20031f818611cd21a55e"
     },
     {
       "relative_path": "visited_urls_2026-05-31T2018Z.txt",
       "size_bytes": 371,
-      "sha256": "38e343df49d57a69ad72446dbe8e7628d309b3fcc313d91d55cab8f345a64852",
-      "modified_utc": "2026-05-31T20:18:56.568402+00:00"
+      "sha256": "38e343df49d57a69ad72446dbe8e7628d309b3fcc313d91d55cab8f345a64852"
+    },
+    {
+      "relative_path": "public_safe_artifact_bundle_2026-05-31T2120Z.md",
+      "size_bytes": 4888,
+      "sha256": "a8695674e09cdf324fc8af0301fe744c1699fd8f716aa03f2ae5a13bc9b265d4"
+    },
+    {
+      "relative_path": "example_dossier_2026-05-31T2024Z.md",
+      "size_bytes": 4837,
+      "sha256": "4b8d0b6c06970c3b6be01a5f0a9dab5b479e2daa637a1dcc7d5c656f593c7851"
+    },
+    {
+      "relative_path": "public_safe_artifact_bundle_verification_2026-05-31T2122Z.md",
+      "size_bytes": 3679,
+      "sha256": "e4a16da34973a5869dc7c7261f5cdffec61f8d2c638431a0277b67eb6262b8a0"
+    },
+    {
+      "relative_path": "public_safe_artifact_bundle_preview_2026-05-31T2124Z.html",
+      "size_bytes": 5326,
+      "sha256": "c8cfb3359924cb8eff8787bfdd1cedd7ceb51fe91f2d032fef3f5458203dbb8f"
     }
   ]
 }
