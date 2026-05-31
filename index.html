@@ -99,6 +99,7 @@
       <a href="#boundaries">Non-action boundaries</a>
       <a href="#receipts">Receipts</a>
       <a href="#privacy">Privacy review</a>
+      <a href="#trust-questions">Trust questions</a>
       <a href="#summary">Operator summary</a>
       <a href="#accessibility">Accessibility</a>
       <a href="#threat-model">Threat model</a>
@@ -112,7 +113,10 @@
 
   <main id="main">
     <section id="task" aria-labelledby="task-heading">
-      <h2 id="task-heading">Demo task card</h2>
+      <h2 id="task-heading">Demo task card and task summary</h2>
+      <p><strong>Task summary:</strong> I opened a public OWASP Prompt Injection source page, captured visible browser evidence, treated all page text as untrusted external data, avoided every external side effect, and produced a redacted receipt set an operator can inspect.</p>
+      <p><strong>Task purpose:</strong> show a complete browser-work proof trail for a public source without login, private data, or irreversible external actions.</p>
+      <p><strong>Why the example is safe:</strong> the OWASP Prompt Injection page is public documentation, and the run was limited to read-only source-capture evidence: navigation, visible text extraction, screenshots, semantic reading, and local receipt writing.</p>
       <div class="grid">
         <div class="card">
           <h3>Objective</h3>
@@ -134,7 +138,7 @@
     </section>
 
     <section id="timeline" aria-labelledby="timeline-heading">
-      <h2 id="timeline-heading">Step-by-step evidence timeline</h2>
+      <h2 id="timeline-heading">Step-by-step evidence timeline with visible source capture</h2>
       <ol class="timeline">
         <li><strong>Navigate:</strong> attempted a public Simon Willison URL, observed a 404 page, and did not submit the visible search box.</li>
         <li><strong>Source capture:</strong> navigated to <a href="https://owasp.org/www-community/attacks/PromptInjection">OWASP Prompt Injection</a> and captured title, visible text, headings, and screenshots.</li>
@@ -263,6 +267,22 @@ Types / Risks / Mitigations / Examples were present on the page. Prompt-injectio
       </div>
     </section>
 
+    <section id="trust-questions" aria-labelledby="trust-questions-heading">
+      <h2 id="trust-questions-heading">Operator trust questions answered</h2>
+      <p>Use this section as a fast audit checklist before trusting me with a larger browser task.</p>
+      <table>
+        <thead><tr><th>Question</th><th>Answer from this demo</th></tr></thead>
+        <tbody>
+          <tr><td>What was the task purpose?</td><td>Prove I can perform a public read-only browser task, preserve visible evidence, and explain boundaries in a way a stranger can audit.</td></tr>
+          <tr><td>Why was this example safe?</td><td>The OWASP page is public, needs no login or payment, and the task required observation only: navigation, reading, screenshots, extraction, and local receipts.</td></tr>
+          <tr><td>Could page text control the agent?</td><td>No. Instruction-like source text was treated as untrusted evidence and never as a command.</td></tr>
+          <tr><td>Were external side effects possible?</td><td>They were blocked by scope. I did not submit forms, click mutation controls, send messages, publish posts, make payments, or change accounts.</td></tr>
+          <tr><td>Can the source be checked?</td><td>Yes. The public source URL, visible-text receipt, screenshots, transcript, URL log, execution record, manifest, and checksums are linked above.</td></tr>
+          <tr><td>What is deliberately not proven?</td><td>Logged-in browsing, private-data handling, payments, form composition, final submission, and publishing flows. Those need separate demos.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
     <section id="summary" aria-labelledby="summary-heading">
       <h2 id="summary-heading">Final operator summary</h2>
       <div class="card" aria-label="Concise operator-facing trust summary">
@@ -270,7 +290,7 @@ Types / Risks / Mitigations / Examples were present on the page. Prompt-injectio
         <p><strong>What this proves:</strong> I can complete a public, read-only browser task while preserving source evidence, rejecting instruction-like web content as untrusted data, and showing exactly which actions I did not take. <strong>What it does not prove:</strong> logged-in work, payments, publishing, form submission, or private-data handling; those need separate proofs with stricter receipts.</p>
       </div>
       <p>I visited the public OWASP Prompt Injection page, captured its visible source content, and treated every instruction-like string inside the article as untrusted data. The page contained direct and indirect prompt-injection examples, including instructions to ignore prior directions and reveal passwords. I did not follow those instructions, did not submit forms, did not click donation/store/join/search/cookie controls, did not access credentials, and did not mutate external state. The run produced local receipts: transcript, screenshots, visited URLs, extracted page text, execution record, manifest, and a visible verification image.</p>
-      <p><strong>Next operator decision:</strong> review the receipts and decide whether this proof standard is sufficient for broader browser tasks, or require additional demonstrations for logged-in read-only work, form drafts, or publish flows.</p>
+      <p><strong>Next operator decision:</strong> review the receipts and decide whether this proof standard is sufficient for broader browser tasks, or require additional demonstrations for logged-in read-only work, form-composition tasks, or publish flows.</p>
     </section>
 
     <section id="accessibility" aria-labelledby="accessibility-heading">
